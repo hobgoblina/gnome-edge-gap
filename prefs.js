@@ -21,8 +21,7 @@ function buildPrefsWidget() {
       { hscrollbar_policy: Gtk.PolicyType.NEVER });
   let builder = new Gtk.Builder();
   builder.set_translation_domain("gnome-edge-gap");
-  settingsPath = isGtk4 ? '/Settings-40.ui' : '/Settings.ui'
-  builder.add_from_file(Me.path + settingsPath);
+  builder.add_from_file(Me.path + '/Settings-40.ui');
 
   let notebook = builder.get_object("settings_notebook");
   if (isGtk4) {
