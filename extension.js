@@ -85,6 +85,19 @@ function disable() {
   Main.layoutManager.removeChrome(topPanel);
   Main.layoutManager.removeChrome(leftPanel);
   Main.layoutManager.removeChrome(rightPanel);
-  settings.run_dispose();
   settings.disconnect(sizeChangedSignal);
+  
+  bottomPanel.destroy();
+  topPanel.destroy();
+  leftPanel.destroy();
+  rightPanel.destroy();
+  
+  settings.run_dispose();
+  
+  sizeChangedSignal = null;
+  bottomPanel = null;
+  topPanel = null;
+  leftPanel = null;
+  rightPanel = null;
+  settings = null;
 }
