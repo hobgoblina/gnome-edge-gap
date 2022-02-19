@@ -8,7 +8,7 @@ let topPanel = null;
 let leftPanel = null;
 let rightPanel = null;
 let settings = null;
-
+let sizeChangedSignal = null;
 
 function init () {}
 
@@ -74,7 +74,7 @@ function enable() {
     affectsStruts: true,
   });
   
-  settings.connect('changed::gap-size', function (k, b) {
+  sizeChangedSignal = settings.connect('changed::gap-size', function (k, b) {
     disable();
     enable();
   });
@@ -86,4 +86,5 @@ function disable() {
   Main.layoutManager.removeChrome(leftPanel);
   Main.layoutManager.removeChrome(rightPanel);
   settings.run_dispose();
+  settings.disconnect(sizeChangedSignal);
 }
