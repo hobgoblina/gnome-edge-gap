@@ -30,13 +30,40 @@ function buildPrefsWidget() {
       frame.add(notebook);
   }
 
-  let settings_spin = builder.get_object("spin_gap_size");
-  settings_spin.set_value(settings.get_int('gap-size'));
-  settings_spin.connect('value-changed', function (w) {
-      settings.set_int('gap-size', w.get_value());
+  let top_settings_spin = builder.get_object("spin_top_gap_size");
+  top_settings_spin.set_value(settings.get_int('top-gap-size'));
+  top_settings_spin.connect('value-changed', function (w) {
+      settings.set_int('top-gap-size', w.get_value());
   });
-  settings.connect('changed::gap-size', function (k, b) {
-      settings_spin.set_value(settings.get_int(b));
+  settings.connect('changed::top-gap-size', function (k, b) {
+      top_settings_spin.set_value(settings.get_int(b));
+  });
+
+  let bottom_settings_spin = builder.get_object("spin_bottom_gap_size");
+  bottom_settings_spin.set_value(settings.get_int('bottom-gap-size'));
+  bottom_settings_spin.connect('value-changed', function (w) {
+      settings.set_int('bottom-gap-size', w.get_value());
+  });
+  settings.connect('changed::bottom-gap-size', function (k, b) {
+      bottom_settings_spin.set_value(settings.get_int(b));
+  });
+
+  let left_settings_spin = builder.get_object("spin_left_gap_size");
+  left_settings_spin.set_value(settings.get_int('left-gap-size'));
+  left_settings_spin.connect('value-changed', function (w) {
+      settings.set_int('left-gap-size', w.get_value());
+  });
+  settings.connect('changed::left-gap-size', function (k, b) {
+      left_settings_spin.set_value(settings.get_int(b));
+  });
+
+  let right_settings_spin = builder.get_object("spin_right_gap_size");
+  right_settings_spin.set_value(settings.get_int('right-gap-size'));
+  right_settings_spin.connect('value-changed', function (w) {
+      settings.set_int('right-gap-size', w.get_value());
+  });
+  settings.connect('changed::right-gap-size', function (k, b) {
+      right_settings_spin.set_value(settings.get_int(b));
   });
 
   if (!isGtk4) {

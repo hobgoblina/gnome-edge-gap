@@ -1,5 +1,5 @@
 {
-  "description": "add a gap around the edge of your screen",
+  "description": "add configurable-width gaps around the edge of your screen",
   "name": "Edge Gap",
   "settings-schema": "org.gnome.shell.extensions.gnome-edge-gap",
   "shell-version": [
@@ -9,5 +9,5 @@
   ],
   "url": "https://github.com/necropolina/gnome-edge-gap",
   "uuid": "gnome-edge-gap@necropolina",
-  "version": 1
+  "version": 3
 }

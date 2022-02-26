@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="org.gnome.shell.extensions.gnome-edge-gap" path="/org/gnome/shell/extensions/gnome-edge-gap/">
-    <key name="gap-size" type="i">
+    <key name="top-gap-size" type="i">
       <default>10</default>
-      <summary>Gap size (px)</summary>
+      <summary>Top gap size (px)</summary>
       <description>
-        Size of the gap in pixels
+        Size of the top gap in pixels
+      </description>
+    </key>
+    <key name="left-gap-size" type="i">
+      <default>10</default>
+      <summary>Left gap size (px)</summary>
+      <description>
+        Size of the left-side gap in pixels
+      </description>
+    </key>
+    <key name="right-gap-size" type="i">
+      <default>10</default>
+      <summary>Right gap size (px)</summary>
+      <description>
+        Size of the right-side gap in pixels
+      </description>
+    </key>
+    <key name="bottom-gap-size" type="i">
+      <default>10</default>
+      <summary>Bottom gap size (px)</summary>
+      <description>
+        Size of the bottom gap in pixels
       </description>
     </key>
   </schema>
