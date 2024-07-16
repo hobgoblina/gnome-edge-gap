@@ -4,30 +4,42 @@
     <key name="top-gap-size" type="i">
       <default>10</default>
       <summary>Top gap size (px)</summary>
-      <description>
-        Size of the top gap in pixels
-      </description>
+      <description>Size of the top gap in pixels</description>
     </key>
     <key name="left-gap-size" type="i">
       <default>10</default>
       <summary>Left gap size (px)</summary>
-      <description>
-        Size of the left-side gap in pixels
-      </description>
+      <description>Size of the left-side gap in pixels</description>
     </key>
     <key name="right-gap-size" type="i">
       <default>10</default>
       <summary>Right gap size (px)</summary>
-      <description>
-        Size of the right-side gap in pixels
-      </description>
+      <description>Size of the right-side gap in pixels</description>
     </key>
     <key name="bottom-gap-size" type="i">
       <default>10</default>
       <summary>Bottom gap size (px)</summary>
-      <description>
-        Size of the bottom gap in pixels
-      </description>
+      <description>Size of the bottom gap in pixels</description>
+    </key>
+    <key name="secondary-top-gap-size" type="i">
+      <default>10</default>
+      <summary>Top gap size for secondary monitors (px)</summary>
+      <description>Size of the top gap for secondary monitors in pixels</description>
+    </key>
+    <key name="secondary-left-gap-size" type="i">
+      <default>10</default>
+      <summary>Left gap size for secondary monitors (px)</summary>
+      <description>Size of the left-side gap for secondary monitors in pixels</description>
+    </key>
+    <key name="secondary-right-gap-size" type="i">
+      <default>10</default>
+      <summary>Right gap size for secondary monitors (px)</summary>
+      <description>Size of the right-side gap for secondary monitors in pixels</description>
+    </key>
+    <key name="secondary-bottom-gap-size" type="i">
+      <default>10</default>
+      <summary>Bottom gap size for secondary monitors (px)</summary>
+      <description>Size of the bottom gap for secondary monitors in pixels</description>
     </key>
   </schema>
 </schemalist>
